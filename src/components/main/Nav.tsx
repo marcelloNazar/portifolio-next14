@@ -12,8 +12,8 @@ import { usePathname, useRouter } from "next/navigation";
 
 export const navData = [
   { name: "inicio", path: "/", icon: <HiHome /> },
-  { name: "projetos", path: "/projects", icon: <HiViewColumns /> },
   { name: "sobre", path: "/about", icon: <HiUser /> },
+  { name: "projetos", path: "/projects", icon: <HiViewColumns /> },
   {
     name: "contato",
     path: "/contact",

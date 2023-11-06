@@ -19,7 +19,7 @@ const projetoData = [
   {
     title: "Vetcenter",
     img: "/home-vetcenter.png",
-    link: "https://frontend-vetcenter.vercel.app/login",
+    link: "https://frontend-vetcenter.vercel.app/",
     desc: "alguma descrição",
     tecnologias: ["typescript", "javascript"],
   },
@@ -95,7 +95,7 @@ const ProjetoSlider = () => {
           {projetoData.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <Link href={`d${item.link}`}>
+                <Link href={item.link}>
                   <motion.div
                     variants={slideInFromRight(0.8)}
                     className="relative rounded-lg cursor-pointer overflow-hidden flex items-center justify-center group"
