@@ -48,6 +48,6 @@ const config: Config = {
       DEFAULT: "15px",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 export default config;
