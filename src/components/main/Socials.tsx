@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import {
   AiFillLinkedin,
@@ -8,7 +9,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-3xl">
+    <div className="flex items-center gap-x-5 text-4xl">
       <Link
         href={"https://github.com/marcelloNazar"}
         className="hover:text-accent hover:scale-110 transition-all duration-300"
