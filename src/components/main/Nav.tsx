@@ -9,6 +9,9 @@ import {
 } from "react-icons/hi2";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import path from "path";
+import { Transition } from "../context/Transition";
 
 export const navData = [
   { name: "inicio", path: "/", icon: <HiHome /> },
@@ -18,15 +21,31 @@ export const navData = [
 
 const Nav = () => {
   const pathName = usePathname();
-  const router = useRouter();
-  function handleClick(path: string) {
-    return router.push(path);
-  }
+  const [isRouting, setIsRouting] = useState(false);
+  const [prevPath, setPrevPath] = useState(pathName);
+
+  useEffect(() => {
+    if (prevPath !== pathName) {
+      setIsRouting(true);
+    }
+  }, [prevPath, pathName]);
+
+  useEffect(() => {
+    if (isRouting) {
+      setPrevPath(pathName);
+      const timeout = setTimeout(() => {
+        setIsRouting(false);
+      }, 1200);
+      return () => clearTimeout(timeout);
+    }
+  }, [isRouting]);
+
   return (
     <nav
       className="absolute flex flex-col items-center justify-center gap-y-4 h-max mt-auto 
-    bottom-[10%] z-[50] top-0 w-full"
+      bottom-[11%] md:bottom-[2%] z-[50] top-0 w-full"
     >
+      {isRouting && <Transition />}
       <div
         className="flex items-center justify-between gap-x-10 px-10
         bg-white/10 w-max h-12 backdrop-blur-sm text-xl rounded-xl"
