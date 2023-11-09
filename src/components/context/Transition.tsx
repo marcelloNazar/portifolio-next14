@@ -32,7 +32,7 @@ export const Transition = () => {
         transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
       ></motion.div>
       <motion.div
-        className="fixed z-[30] right-0 bottom-full w-screen h-screen bg-[#283d6e]"
+        className="fixed z-[30] right-0 bottom-full w-screen h-screen bg-[#001f45]"
         variants={TransitionVariants}
         initial="initial"
         animate="animate"
@@ -40,7 +40,7 @@ export const Transition = () => {
         transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
       ></motion.div>
       <motion.div
-        className="fixed z-[20] right-0 bottom-full w-screen h-screen bg-[#001f45]"
+        className="fixed z-[20] right-0 bottom-full w-screen h-screen bg-[#283d6e]"
         variants={TransitionVariants}
         initial="initial"
         animate="animate"
