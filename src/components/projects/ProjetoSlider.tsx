@@ -19,7 +19,7 @@ const projetoData = [
   {
     title: "Vetcenter",
     img: "/home-vetcenter.png",
-    link: "https://frontend-vetcenter.vercel.app/",
+    link: "https://vet.marcellonazar.com.br/",
     desc: "alguma descrição",
     tecnologias: ["typescript", "javascript"],
   },
