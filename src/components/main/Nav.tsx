@@ -43,7 +43,7 @@ const Nav = () => {
   return (
     <nav
       className="absolute flex flex-col items-center justify-center gap-y-4 h-max mt-auto 
-      bottom-[11%] md:bottom-[2%] z-[50] top-0 w-full"
+      bottom-[10%] md:bottom-[2%] z-[50] top-0 w-full"
     >
       {isRouting && <Transition />}
       <div
