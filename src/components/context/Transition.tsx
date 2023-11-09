@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { usePathname } from "next/navigation";
 
@@ -20,9 +20,8 @@ const TransitionVariants = {
 };
 
 export const Transition = () => {
-  const pathName = usePathname();
   return (
-    <motion.div key={pathName}>
+    <>
       <motion.div
         className="fixed z-[40] right-0 bottom-full w-screen h-screen bg-[#0e1626]"
         variants={TransitionVariants}
@@ -47,6 +46,6 @@ export const Transition = () => {
         exit="exit"
         transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
       ></motion.div>
-    </motion.div>
+    </>
   );
 };
