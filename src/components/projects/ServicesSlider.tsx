@@ -4,14 +4,15 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper/modules";
+import { RxPencil2, RxArrowTopRight } from "react-icons/rx";
 import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
+  BiCodeAlt,
+  BiDesktop,
+  BiServer,
+  BiMobileAlt,
+  BiData,
+  BiBot,
+} from "react-icons/bi";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -22,37 +23,37 @@ import {
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
+    icon: <BiCodeAlt />,
     title: "Linguagens",
     description: "Typescript, Java, Dart",
   },
   {
-    icon: <RxPencil2 />,
+    icon: <BiDesktop />,
     title: "FrontEnd",
     description: "React, NextJs, Tailwind",
   },
   {
-    icon: <RxDesktop />,
+    icon: <BiServer />,
     title: "Backend",
     description: "Spring Boot, NodeJs",
   },
   {
-    icon: <RxReader />,
+    icon: <BiMobileAlt />,
     title: "Mobile",
     description: "Flutter, React Native",
   },
   {
-    icon: <RxRocket />,
+    icon: <BiData />,
     title: "DB",
     description: "MySQL, Mongo, Postegres",
   },
   {
-    icon: <RxRocket />,
+    icon: <BiBot />,
     title: "Bot Wpp",
     description: "Typebot, Venom-bot",
   },
   {
-    icon: <RxRocket />,
+    icon: <RxPencil2 />,
     title: "UI|UX",
     description: "Figma, Framer Motion",
   },
