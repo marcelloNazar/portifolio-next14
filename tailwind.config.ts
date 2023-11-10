@@ -23,6 +23,7 @@ const config: Config = {
         primary: "#131424",
         secondary: "#393A47",
         accent: "#00cdff",
+        space: "#004080",
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',

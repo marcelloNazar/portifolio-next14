@@ -63,11 +63,11 @@ const ServiceSlider = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col w-full xl:flex-row gap-x-2"
+      className="flex flex-col w-full xl:flex-row gap-x-2 mb-4"
     >
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-center flex xl:w-[22%] flex-col lg:text-left mb-2 xl:mb-0"
+        className="text-center flex xl:w-[22%] flex-col lg:text-left"
       >
         <h2 className="h2">Tecnologias</h2>
       </motion.div>
