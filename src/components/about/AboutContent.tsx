@@ -29,6 +29,7 @@ import {
   SiVercel,
   SiRailway,
   SiAdobexd,
+  SiNestjs,
 } from "react-icons/si";
 
 const aboutData = [
@@ -55,6 +56,7 @@ const aboutData = [
         stage: "",
         icons: [
           <SiNodedotjs className="hover:text-[#8CC84B]" />,
+          <SiNestjs className="hover:text-[#E0234E]" />,
           <FaJava className="hover:text-[#D90007]" />,
           <SiSpringboot className="hover:text-[#6DB33F]" />,
           <SiSpring className="hover:text-[#88CE02]" />,
@@ -87,11 +89,11 @@ const aboutData = [
     info: [
       {
         title: "Analise e Desenvolvimento de Sistemas - Estacio, MG",
-        stage: "2024",
+        stage: "2025",
         icons: [],
       },
       {
-        title: "Desenvolvimento Web Full Stack - Anhanguera, BH-MG",
+        title: "Desenvolvimento Web Full Stack - BH-MG",
         stage: "2021",
         icons: [],
       },
@@ -107,7 +109,17 @@ const aboutData = [
     info: [
       {
         title: "Desenvolvedor Fullstack - autônomo",
-        stage: "2021 - 2023",
+        stage: "2021 - 2024",
+        icons: [],
+      },
+      {
+        title: "Desenvolvedor Fullstack - Tiger Tech",
+        stage: "2023 - 2024",
+        icons: [],
+      },
+      {
+        title: "Desenvolvedor Fullstack - autônomo",
+        stage: "2024 - Atualmente",
         icons: [],
       },
     ],
@@ -132,9 +144,16 @@ export default function AboutContent() {
           variants={slideInFromLeft(0.5)}
           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl-mb-12 px-2 xl-px-8"
         >
-          Eu sou Marcello Nazar, tenho 2 anos de experiencia como desenvolvedor
-          FullStack freelancer ajudando pequenas empresas a obterem lucros e
-          conquistarem suas metas, através da tecnologia.
+          Eu sou Marcello Nazar. Sou um desenvolvedor fullstack apaixonado por
+          tecnologia com mais de 2 anos de experiência na área de
+          desenvolvimento de software.
+          <br />
+          Em minha jornada, adquiri experiência significativa e habilidades com
+          foco principal no desenvolvimento web.
+          <br />
+          Não sou apenas um desenvolvedor, Sou revisor de código e solucionador
+          de problemas. Permaneço sempre disposto a enfrentar novos desafios com
+          a mesma dedicação e sucesso.
         </motion.p>
       </div>
       <motion.div

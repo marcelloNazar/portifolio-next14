@@ -35,7 +35,7 @@ const serviceData = [
   {
     icon: <BiServer />,
     title: "Backend",
-    description: "Spring Boot, NodeJs",
+    description: "NodeJs, NestJs, Spring",
   },
   {
     icon: <BiMobileAlt />,
