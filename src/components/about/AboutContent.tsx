@@ -118,8 +118,8 @@ const aboutData = [
         icons: [],
       },
       {
-        title: "Desenvolvedor Fullstack - autônomo",
-        stage: "2024 - Atualmente",
+        title: "Desenvolvedor Fullstack - Begins Softwares",
+        stage: "2024 - Atual",
         icons: [],
       },
     ],
